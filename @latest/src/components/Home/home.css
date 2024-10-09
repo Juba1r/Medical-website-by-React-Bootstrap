@@ -1,0 +1,22 @@
+.image {
+  position: relative;
+  text-align: center;
+  color: #000;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(50%, -50%);
+  text-shadow: 0 0 2px #000;
+}
+
+
+.title-btn {
+  position: absolute;
+  font-weight: 700;
+  top: 50%;
+  left: 60%;
+  transform: translate(50%, -50%);
+}
