@@ -2,21 +2,100 @@
   position: relative;
   text-align: center;
   color: #000;
+  max-width: 100%;
+  height: auto;
 }
 
 .title {
   position: absolute;
   top: 40%;
-  left: 45%;
-  transform: translate(50%, -50%);
+  left: 70%;
+  transform: translate(-50%, -50%);
   text-shadow: 0 0 2px #000;
+  font-size: 3.5vw;
+  white-space: nowrap;
 }
 
-
+/* Title Button Styling */
 .title-btn {
   position: absolute;
   font-weight: 700;
-  top: 50%;
-  left: 60%;
-  transform: translate(50%, -50%);
+  top: 55%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 1.5vw;
+}
+
+/* Media Queries for responsiveness */
+
+/* Adjust for medium screens (tablets, landscape) */
+@media (max-width: 992px) {
+  .title {
+    font-size: 3vw; /* Adjust title font size for medium screens */
+    top: 35%;
+    left: 50%;
+  }
+
+  .title-btn {
+    font-size: 2.5vw; /* Adjust button font size */
+    top: 55%;
+    left: 50%;
+  }
+}
+
+/* Adjust for small screens (mobile) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 4vw; /* Larger title for small screens */
+    top: 30%;
+    left: 50%;
+  }
+
+  .title-btn {
+    font-size: 3vw;
+    top: 60%;
+    left: 50%;
+  }
+}
+
+/* Extra small screens (very small mobile devices) */
+@media (max-width: 576px) {
+  .title {
+    font-size: 4vw;
+    top: 30%;
+    left: 70%;
+  }
+
+  .title-btn {
+    font-size: 4vw;
+    top: 65%;
+    left: 50%;
+  }
+}
+
+/* Home Button CSS */
+
+.btn-grad:hover {
+  background-image: linear-gradient(
+    to top,
+    #ffff 0%,
+    #2d6f81 51%,
+    #0dcaf0 100%
+  );
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad {
+  background-position: right center;
+  color: #000000;
+  text-decoration: none;
 }

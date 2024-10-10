@@ -14,7 +14,7 @@ const Footer = () => {
       <Container className="footer-border">
         <Row className="mt-4 text-center text-md-start">
           {/* Quick Links */}
-          <Col md={4} className="mb-3">
+          <Col xs={12} md={4} className="mb-3">
             <h5 className="fw-bold">Quick Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -46,17 +46,17 @@ const Footer = () => {
           </Col>
 
           {/* Hours */}
-          <Col md={4} className="mb-3">
+          <Col xs={12} md={4} className="mb-3">
             <h5 className="fw-bold">Hours</h5>
-            <div className="d-flex">
-              <ul className="list-unstyled col-md-2">
+            <div className="d-flex justify-content-center justify-content-md-start">
+              <ul className="list-unstyled me-3">
                 <li>Monday:</li>
                 <li>Tuesday:</li>
                 <li>Wednesday:</li>
                 <li>Thursday:</li>
                 <li>Friday:</li>
               </ul>
-              <ul className="list-unstyled g-col-md-2 ms-5">
+              <ul className="list-unstyled">
                 <li>9:00 - 18:00</li>
                 <li>9:00 - 18:00</li>
                 <li>9:00 - 18:00</li>
@@ -67,7 +67,7 @@ const Footer = () => {
           </Col>
 
           {/* Contact Info */}
-          <Col md={4} className="mb-3">
+          <Col xs={12} md={4} className="mb-3">
             <h5 className="fw-bold">Contact</h5>
             <ul className="list-unstyled">
               <li>
@@ -87,7 +87,7 @@ const Footer = () => {
                 Prishtine 1000, Kosove
               </li>
             </ul>
-            <button className="mt-2 btn-reg">Gjej rrugen</button>
+            <button className="mt-2 reg button-U">Gjej rrugen</button>
           </Col>
         </Row>
 

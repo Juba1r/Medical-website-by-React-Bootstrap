@@ -12,35 +12,40 @@ const home = () => {
       <div className="container-fluid p-0">
         <div className="image">
           <img src={heroimg1} width="100%" alt="" />
-          <h2 className="title fw-normal">We take care of your health!</h2>
-          <button className="btn-reg title-btn">Register</button>
+          <h2 className="title fw-normal ">We take care of your health!</h2>
+          <button className="reg button-U title-btn">Register</button>
         </div>
       </div>
-      <div className="container mt-5 d-flex justify-content-center ">
-        <div className="col">
-          <img src={heroimg2} alt="" />
-        </div>
-        <div className="col mt-5">
-          <p className="fs-3">Biography</p>
-          <h3 className="mt-3 fw-bolder fs-1">About Us</h3>
-          <br />
-          <div className="fs-5">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              mollitia, soluta laborum deserunt rerum nam labore dolor odit, ad,
-              magni accusantium beatae aut aliquid? Quisquam non tempora quos?
-              Dicta, non?
-            </p>
+      <div className="container mt-5">
+        <div className="row align-items-center">
+          {/* Image Column */}
+          <div className="col-12 col-md-6 mb-4 mb-md-0 text-center">
+            <img src={heroimg2} alt="" className="img-fluid" />
+          </div>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, maxime!
-            </p>
-            <button className="btn-reg mt-4 fw-bolder">Read More</button>
+          {/* Text Column */}
+          <div className="col-12 col-md-6">
+            <p className="fs-3">Biography</p>
+            <h3 className="mt-3 fw-bolder fs-1">About Us</h3>
+            <br />
+            <div className="fs-5">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                mollitia, soluta laborum deserunt rerum nam labore dolor odit,
+                ad, magni accusantium beatae aut aliquid? Quisquam non tempora
+                quos? Dicta, non?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Perferendis, maxime!
+              </p>
+              <button className="reg button-U mt-4 fw-bolder">Read More</button>
+            </div>
           </div>
         </div>
       </div>
+
       <DiseaseCards />
       <ContactForm />
     </>

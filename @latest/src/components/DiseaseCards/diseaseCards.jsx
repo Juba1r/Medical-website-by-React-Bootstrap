@@ -1,5 +1,5 @@
 import "./diseaseCards.css";
-import { Container, Row, Col, Card} from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import disimg from "../../assets/diseasecardimg.png";
 
@@ -47,8 +47,8 @@ const DiseaseCards = () => {
                 <Card.Body className="text-center">
                   <Card.Title className="fw-bold">{disease.title}</Card.Title>
                   <Card.Text>{disease.description}</Card.Text>
-                  <button className="btn-reg fw-bold rounded-pill px-4">
-                    Read more
+                  <button className="button-U fw-bold rounded-pill px-4">
+                    Read more <i className="bi bi-arrow-right"></i>
                   </button>
                 </Card.Body>
               </Card>

@@ -5,17 +5,13 @@ import "./navbar.css";
 
 const CustomNavbar = () => {
   return (
-    <Navbar
-      bg="light"
-      expand="lg"
-      className="d-flex justify-content-betweeen px-2"
-    >
+    <Navbar bg="light" expand="lg" className="px-2">
       <Container fluid>
         {/* Logo and Name */}
         <Navbar.Brand href="#">
           <div className="d-flex align-items-center">
-            <img src={logo} alt="Logo" className="me-2" />
-            <div>
+            <img src={logo} alt="Logo" className="me-2 logo" />
+            <div className="brand-name">
               <strong>
                 Qendra Klinike Universitare e Kosoves
                 <br />
@@ -29,21 +25,26 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="navbarNav" />
 
         {/* Links and buttons */}
-        <Navbar.Collapse
-          id="navbarNav"
-          className="d-flex justify-content-end gap-5"
-        >
-          <Nav className="gap-5">
-            <Nav.Link href="#" className="btn fw-bold">
+        <Navbar.Collapse id="navbarNav" className="justify-content-end">
+          <Nav className="me-auto gap-4">
+            <button href="#" className="btn-grad border-0 fw-bold">
               Home
-            </Nav.Link>
-            <Nav.Link href="#" className="text-primary fw-bold">
+            </button>
+            <button href="#" className="btn-grad border-0 fw-bold">
               Rreth Nesh
-            </Nav.Link>
+            </button>
+            <button href="#" className="btn-grad border-0 fw-bold">
+              About Us
+            </button>
+            <button href="#" className="btn-grad border-0 fw-bold">
+              Location
+            </button>
           </Nav>
           <div className="d-flex gap-2">
-            <button className="btn fw-bold">Login</button>
-            <button className="btn-reg fw-bold">Register</button>
+            <button className="log button-U fw-bold">Login</button>
+            <button className="reg button-U fw-bold register-btn">
+              Register
+            </button>
           </div>
         </Navbar.Collapse>
       </Container>

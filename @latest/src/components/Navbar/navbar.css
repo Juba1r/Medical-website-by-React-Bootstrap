@@ -1,109 +1,85 @@
-/* Normal button */
+/* Button CSS */
 
-.btn {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-
-  color: #000;
-  font-size: 15px;
-  text-decoration: none;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  background: linear-gradient(178deg, #86b7fe, #fff);
-  background-size: 400%;
-  border-radius: 30px;
-  z-index: 1;
+.button-U {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
 }
 
-.btn:hover {
-  animation: animate 8s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 400%;
-  }
-}
-
-.btn:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  z-index: -1;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-  border-radius: 40px;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.btn:hover:before {
-  filter: blur(20px);
-  opacity: 1;
-  animation: animate 8s linear infinite;
-}
-
-/* Registration button */
-
-.btn-reg {
-  position: relative;
-  border: none;
-  display: inline-block;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-
+.reg {
   color: white;
-  font-size: 15px;
-  text-decoration: none;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  background: linear-gradient(178deg, #af61b8, #af61b8);
-  background-size: 400%;
-  border-radius: 12px;
-  z-index: 1;
+  background-color: #877bae;
+  
 }
 
-.btn-reg:hover {
-  animation: animate 8s linear infinite;
+.log {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #877bae;
+  
 }
 
-@keyframes animate {
-  0% {
-    background-position: 0%;
+.button-U:hover {
+  color: white;
+  /* width:; */
+  box-shadow: 0 0 20px #877bae;
+  background-color: #877bae;
+}
+/* navbar.css */
+
+.logo {
+  width: 50px; /* Adjust logo size for smaller screens */
+  height: auto;
+}
+
+.brand-name {
+  font-size: 1rem; /* Adjust brand name size for responsiveness */
+  text-align: left;
+}
+
+.navbar-nav {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
   }
-  100% {
-    background-position: 400%;
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 }
 
-.btn-reg:before {
-  content: "";
-  position: absolute;
-  border: none;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  z-index: -1;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-  border-radius: 40px;
-  opacity: 0;
-  transition: 0.5s;
-}
+@media (max-width: 767px) {
+  .brand-name {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
 
-.btn-reg:hover:before {
-  filter: blur(20px);
-  opacity: 1;
-  animation: animate 8s linear infinite;
+  .login-btn,
+  .register-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
 }
