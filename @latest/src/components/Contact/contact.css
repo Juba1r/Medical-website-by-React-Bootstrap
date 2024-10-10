@@ -1,0 +1,49 @@
+/* General form input styling */
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.form-input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Styling the submit button */
+.custom-btn {
+  background: linear-gradient(to right, #a085ff, #6b6aff);
+  width: 10%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(to right, #957dff, #5e5aff);
+}
+
+/* Section padding */
+section.py-5 {
+  padding: 5rem 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .form-input {
+    margin-bottom: 15px;
+  }
+}

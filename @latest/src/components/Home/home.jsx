@@ -3,6 +3,8 @@ import heroimg2 from "../../assets/heroimage2.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 import "../Navbar/navbar.css";
+import DiseaseCards from "../DiseaseCards/diseaseCards";
+import ContactForm from "../Contact/contact";
 
 const home = () => {
   return (
@@ -39,6 +41,8 @@ const home = () => {
           </div>
         </div>
       </div>
+      <DiseaseCards />
+      <ContactForm />
     </>
   );
 };

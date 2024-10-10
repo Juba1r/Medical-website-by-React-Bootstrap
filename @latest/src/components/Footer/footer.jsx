@@ -11,8 +11,8 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-light text-dark py-4">
-      <Container className="">
-        <Row className="text-center text-md-start">
+      <Container className="footer-border">
+        <Row className="mt-4 text-center text-md-start">
           {/* Quick Links */}
           <Col md={4} className="mb-3">
             <h5 className="fw-bold">Quick Links</h5>
@@ -94,7 +94,9 @@ const Footer = () => {
         {/* Footer Bottom */}
         <Row className="mt-3">
           <Col className="text-center">
-            <p className="mb-0 fw-bold">&copy; Qendra Klinike Universitare e Kosoves</p>
+            <p className="mb-0 fw-bold">
+              &copy; Qendra Klinike Universitare e Kosoves
+            </p>
           </Col>
         </Row>
       </Container>

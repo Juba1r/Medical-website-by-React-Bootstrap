@@ -1,0 +1,35 @@
+/* Styling for the floating card effect */
+.floating-card {
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 30px 30px #572A77 ; /* Initial shadow */
+  position: relative;
+}
+
+/* Floating effect on hover */
+.floating-card:hover {
+  transform: translateY(-10px); /* Moves the card slightly up */
+  box-shadow: 0 15px 40px rgba(198, 72, 218, 0.608); /* Increased blur and intensity */
+}
+
+/* Blurry background shadow for extra floating effect */
+.floating-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15); /* Blurry shadow */
+  opacity: 0.5;
+  filter: blur(100px); /* Adds blur */
+  transition: opacity 0.3s ease;
+}
+
+/* Enhances the blur effect on hover */
+.floating-card:hover:before {
+  opacity: 1;
+}
