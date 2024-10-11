@@ -3,7 +3,7 @@
   background-color: white;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 30px 30px #572A77 ; /* Initial shadow */
+  box-shadow: 0 30px 30px #572a77; /* Initial shadow */
   position: relative;
 }
 
@@ -33,3 +33,5 @@
 .floating-card:hover:before {
   opacity: 1;
 }
+
+

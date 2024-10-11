@@ -1,14 +1,17 @@
 import "./App.css";
-import Navbar from "./components/Navbar/navbar";
+import Layout from "../src/components/layout";
 import Home from "./components/Home/home";
-import Footer from "./components/Footer/footer";
+import About from "./components/AboutUs/aboutUs";
+import Locaiton from "./components/Location/location";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <Layout>
+        <Home />
+        <About />
+        <Locaiton />
+      </Layout>
     </>
   );
 }

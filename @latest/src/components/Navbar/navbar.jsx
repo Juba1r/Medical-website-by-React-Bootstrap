@@ -26,7 +26,7 @@ const CustomNavbar = () => {
 
         {/* Links and buttons */}
         <Navbar.Collapse id="navbarNav" className="justify-content-end">
-          <Nav className="me-auto gap-4">
+          <Nav className="me-5 gap-4">
             <button href="#" className="btn-grad border-0 fw-bold">
               Home
             </button>

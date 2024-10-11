@@ -40,7 +40,9 @@ const home = () => {
                 nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Perferendis, maxime!
               </p>
-              <button className="reg button-U mt-4 fw-bolder">Read More</button>
+              <button className="reg button-U mt-4 fw-bolder">
+                Read More <i className="bi bi-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
