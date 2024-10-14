@@ -5,6 +5,7 @@ import "./home.css";
 import "../Navbar/navbar.css";
 import DiseaseCards from "../DiseaseCards/diseaseCards";
 import ContactForm from "../Contact/contact";
+import { Link } from "react-router-dom";
 
 const home = () => {
   return (
@@ -13,7 +14,10 @@ const home = () => {
         <div className="image">
           <img src={heroimg1} width="100%" alt="" />
           <h2 className="title fw-normal ">We take care of your health!</h2>
-          <button className="reg button-U title-btn">Register</button>
+
+          <Link to="/Register" className="reg button-U title-btn">
+            Register
+          </Link>
         </div>
       </div>
       <div className="container mt-5">

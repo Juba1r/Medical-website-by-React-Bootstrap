@@ -77,7 +77,8 @@
 
 /* Home Button CSS */
 
-.btn-grad:hover {
+.btn-grad:hover,
+.active {
   background-image: linear-gradient(
     to top,
     #ffff 0%,
@@ -94,10 +95,33 @@
   border-radius: 10px;
   display: block;
 }
+.active {
+  background-image: linear-gradient(
+    to top,
+    #ffff 0%,
+    #2d6f81 51%,
+    #0dcaf0 100%
+  );
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
 
 .btn-grad {
   background-position: right center;
-  color: #000000;
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+.active {
+  background-position: right center;
+  color: #ededed;
   font-size: 18px;
   text-decoration: none;
 }

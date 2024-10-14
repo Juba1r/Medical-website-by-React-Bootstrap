@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../assets/logo.png";
 import "./navbar.css";
@@ -27,24 +28,26 @@ const CustomNavbar = () => {
         {/* Links and buttons */}
         <Navbar.Collapse id="navbarNav" className="justify-content-end">
           <Nav className="me-5 gap-4">
-            <button href="#" className="btn-grad border-0 fw-bold">
+            <NavLink to="/Home" className="btn-grad border-0 fw-bold">
               Home
-            </button>
-            <button href="#" className="btn-grad border-0 fw-bold">
+            </NavLink>
+            <NavLink to="/Rreth Nesh" className="btn-grad border-0 fw-bold">
               Rreth Nesh
-            </button>
-            <button href="#" className="btn-grad border-0 fw-bold">
+            </NavLink>
+            <NavLink to="/AboutUs" className="btn-grad border-0 fw-bold">
               About Us
-            </button>
-            <button href="#" className="btn-grad border-0 fw-bold">
+            </NavLink>
+            <NavLink to="/Location" className="btn-grad border-0 fw-bold">
               Location
-            </button>
+            </NavLink>
           </Nav>
           <div className="d-flex gap-2">
-            <button className="log button-U fw-bold">Login</button>
-            <button className="reg button-U fw-bold register-btn">
+            <Link to="/Login" className="log button-U fw-bold">
+              Login
+            </Link>
+            <Link to="/Register" className="reg button-U fw-bold register-btn">
               Register
-            </button>
+            </Link>
           </div>
         </Navbar.Collapse>
       </Container>

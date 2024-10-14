@@ -1,0 +1,54 @@
+.toggle-role button {
+  width: 100px;
+}
+
+.toggle-role .btn {
+  border-radius: 0;
+}
+
+.input-group-text {
+  cursor: pointer;
+}
+
+.p-H {
+  color: darkgrey;
+}
+.h1-H {
+  color: darkgrey;
+  font-size: 3.5rem;
+}
+
+/* Button CSS */
+
+.button-H {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+.reg-H {
+  color: white;
+  background-color: #877bae;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+}
+
+.log-H {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #877bae;
+}
+
+.button-H:hover {
+  color: white;
+  /* width:; */
+  box-shadow: 0 0 20px #877bae;
+  background-color: #877bae;
+}
