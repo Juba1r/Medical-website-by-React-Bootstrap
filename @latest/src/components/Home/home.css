@@ -77,15 +77,14 @@
 
 /* Home Button CSS */
 
-.btn-grad:hover,
-.active {
+.btn-grad:hover {
   background-image: linear-gradient(
     to top,
     #ffff 0%,
     #2d6f81 51%,
     #0dcaf0 100%
   );
-  padding: 10px 10px;
+  padding: 5px 5px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;

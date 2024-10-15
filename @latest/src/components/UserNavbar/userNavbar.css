@@ -1,0 +1,109 @@
+/* Button CSS */
+
+.button-A {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 80px;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.reg {
+  color: white;
+  background-color: #877bae;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+}
+
+.log-A {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #877bae;
+  text-decoration: none;
+  
+}
+
+.button-A:hover {
+  color: white;
+  box-shadow: 0 0 20px #877bae;
+  background-color: #877bae;
+}
+
+/* Navbar CSS */
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Adjusting navbar rows */
+.nav-row {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  margin-bottom: 10px;
+}
+
+.pro-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #877bae;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.bell-icon{
+    font-size: 30px;
+    color: #877bae;
+    cursor: pointer;
+    
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-name {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .login-btn,
+  .register-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+}

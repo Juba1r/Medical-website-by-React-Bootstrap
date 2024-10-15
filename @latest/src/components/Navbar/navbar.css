@@ -26,8 +26,7 @@
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid #877bae;
   text-decoration: none;
-  justify-content: center;
-  display: flex;
+  
   
 }
 
@@ -52,6 +51,7 @@
 .navbar-nav {
   flex-direction: column;
 }
+
 
 @media (min-width: 768px) {
   .navbar-nav {

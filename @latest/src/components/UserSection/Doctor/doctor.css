@@ -1,0 +1,63 @@
+/* Custom styles for the doctor cards */
+
+
+
+
+.doctor-card:hover {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(9, 132, 180, 0.885);
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-10%);
+}
+
+
+
+.doctor-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+
+
+.doctor-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.doctor-title {
+  color: #6c757d;
+  
+}
+
+.icon-search{
+    
+    cursor: pointer;
+    color: rgba(9, 132, 180, 0.885);
+}
+
+
+
+/* Button CSS */
+
+.button-D {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  margin: auto;
+  width: 160px;
+  padding: 5px 5px;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  white-space: nowrap;
+  background-color: #5f93c16f;
+  
+}
+
+.button-D:hover {
+  color: white;
+  /* width: 100px; */
+  box-shadow: 0 0 20px #877bae;
+  background-color: #877bae;
+}

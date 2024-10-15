@@ -5,8 +5,10 @@ import About from "./components/AboutUs/aboutUs";
 import Location from "./components/Location/location";
 import Login from "./components/Login/login";
 import Register from "./components/Register/register";
-import Appointment from "./components/UserSection/Appointment/appointment";
 import UserLayout from "./components/userLayout";
+import Appointment from "./components/UserSection/Appointment/appointment";
+import Doctor from "./components/UserSection/Doctor/doctor";
+import ReadAboutDiseases from "./components/UserSection/ReadAboutDiseases/readAboutDis";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
       {
         path: "/Appointment",
         element: <Appointment />,
+      },
+      {
+        path: "/Doctor",
+        element: <Doctor />,
+      },
+      {
+        path: "/ReadAboutDiseases",
+        element: <ReadAboutDiseases />,
       },
     ],
   },

@@ -1,0 +1,16 @@
+
+
+.appointment-form h1 {
+  font-size: 3rem;
+  color: darkgray;
+}
+
+.appointment-form-container .form-control {
+  border-radius: 5px;
+}
+
+.appointment-form-container .btn {
+  background-color: #5cb85c;
+  border: none;
+  width: 100%;
+}
