@@ -3,14 +3,14 @@
   background-color: white;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 30px 30px #572a77; /* Initial shadow */
+  box-shadow: 0 30px 30px #572a77;
   position: relative;
 }
 
 /* Floating effect on hover */
 .floating-card:hover {
-  transform: translateY(-10px); /* Moves the card slightly up */
-  box-shadow: 0 15px 40px rgba(198, 72, 218, 0.608); /* Increased blur and intensity */
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(198, 72, 218, 0.608);
 }
 
 /* Blurry background shadow for extra floating effect */
@@ -23,9 +23,9 @@
   bottom: 0;
   z-index: -1;
   border-radius: inherit;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15); /* Blurry shadow */
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
   opacity: 0.5;
-  filter: blur(100px); /* Adds blur */
+  filter: blur(100px);
   transition: opacity 0.3s ease;
 }
 
@@ -33,5 +33,3 @@
 .floating-card:hover:before {
   opacity: 1;
 }
-
-

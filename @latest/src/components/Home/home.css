@@ -84,11 +84,11 @@
     #2d6f81 51%,
     #0dcaf0 100%
   );
-  padding: 5px 5px;
+  padding: 5px 5px 2px 2px;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   transition: 0.5s;
-  background-size: 200% auto;
+  /* background-size: 100% auto; */
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;

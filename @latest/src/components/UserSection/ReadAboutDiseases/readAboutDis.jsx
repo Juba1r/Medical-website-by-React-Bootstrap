@@ -4,8 +4,50 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import disimg from "../../../assets/diseasecardimg.png";
 import { useState } from "react";
 
-const readAboutDis = () => {
+const ReadAboutDis = () => {
   const diseases = [
+    {
+      id: 1,
+      title: "Disease 1",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: disimg,
+    },
+    {
+      id: 2,
+      title: "Disease 2",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: disimg,
+    },
+    {
+      id: 3,
+      title: "Disease 3",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: disimg,
+    },
+    {
+      id: 1,
+      title: "Disease 1",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: disimg,
+    },
+    {
+      id: 2,
+      title: "Disease 2",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: disimg,
+    },
+    {
+      id: 3,
+      title: "Disease 3",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: disimg,
+    },
     {
       id: 1,
       title: "Disease 1",
@@ -31,7 +73,7 @@ const readAboutDis = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredDisease = diseases.filter((disease) =>
-    disease.name.toLowerCase().includes(searchTerm.toLowerCase())
+    disease.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -41,7 +83,7 @@ const readAboutDis = () => {
           <InputGroup className="w-50">
             <Form.Control
               type="text"
-              placeholder="Search for a doctor"
+              placeholder="Search for a disease"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="border-3 p-3 mt-4"
@@ -76,4 +118,4 @@ const readAboutDis = () => {
   );
 };
 
-export default readAboutDis;
+export default ReadAboutDis;

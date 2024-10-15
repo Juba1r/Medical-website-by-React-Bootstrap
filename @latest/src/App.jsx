@@ -9,6 +9,7 @@ import UserLayout from "./components/userLayout";
 import Appointment from "./components/UserSection/Appointment/appointment";
 import Doctor from "./components/UserSection/Doctor/doctor";
 import ReadAboutDiseases from "./components/UserSection/ReadAboutDiseases/readAboutDis";
+import Diagnosis from "./components/UserSection/Diagnosis/diagnosis";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/ReadAboutDiseases",
         element: <ReadAboutDiseases />,
+      },
+      {
+        path: "/Diagnosis",
+        element: <Diagnosis />,
       },
     ],
   },

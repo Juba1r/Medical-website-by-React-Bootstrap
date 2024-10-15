@@ -26,8 +26,8 @@ const userNavbar = () => {
         <Navbar.Toggle aria-controls="navbarNav" />
 
         {/* Links and buttons */}
-        <Navbar.Collapse id="navbarNav" className="justify-content-end">
-          <Nav className="w-100">
+        <Navbar.Collapse id="navbarNav" className="justify-content-center">
+          <Nav className="">
             {/* First Row */}
             <div className="nav-row mb-2">
               <NavLink to="/Home" className="btn-grad border-0 fw-bold">
@@ -42,17 +42,17 @@ const userNavbar = () => {
               <NavLink to="/Location" className="btn-grad border-0 fw-bold">
                 Location
               </NavLink>
-            </div>
 
-            {/* Second Row */}
-            <div className="nav-row">
               <NavLink to="/Appointment" className="btn-grad border-0 fw-bold">
                 Appointments
               </NavLink>
               <NavLink to="/Doctor" className="btn-grad border-0 fw-bold">
                 Doctors
               </NavLink>
-              <NavLink to="/ReadAboutDiseases" className="btn-grad border-0 fw-bold">
+              <NavLink
+                to="/ReadAboutDiseases"
+                className="btn-grad border-0 fw-bold"
+              >
                 Read about Diseases
               </NavLink>
               <NavLink to="/Diagnosis" className="btn-grad border-0 fw-bold">
@@ -62,7 +62,7 @@ const userNavbar = () => {
           </Nav>
 
           {/* Login and Profile Icon */}
-          <div className="d-flex gap-2">
+          <div className="d-flex gap-2 ms-auto mt-2">
             <i className="bi bi-bell bell-icon"></i>
             <Link to="/Login" className="log-A button-A fw-bold">
               Qkycu

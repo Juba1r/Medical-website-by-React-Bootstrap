@@ -52,7 +52,8 @@
   display: flex;
   justify-content: start;
   gap: 20px;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  flex-wrap: wrap;
+  max-width: 500px;
   margin-bottom: 10px;
 }
 
