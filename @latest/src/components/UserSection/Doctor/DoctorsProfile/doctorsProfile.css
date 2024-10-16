@@ -1,32 +1,47 @@
-.doc-bg{
-    background-color: rgb(188, 206, 239);
-    width: auto;
-    height: 600px;
-    border-radius: 70px;
-    box-shadow: 2px 2px 20px #BCD4E6;
-    
+.doc-bg {
+  background-color: rgb(188, 206, 239);
+  width: auto;
+  height: 600px;
+  border-radius: 70px;
+  box-shadow: 2px 2px 20px #bcd4e6;
 }
 
-.doctor-title{
-    font-size: 40px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    letter-spacing: 4px;
-    
-
+.doctor-profile-title {
+  font-size: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  letter-spacing: 4px;
 }
 
-.doctor-dsgtn{
-    letter-spacing: 2px;
+.doctor-dsgtn {
+  letter-spacing: 2px;
 }
-.doctor-details{
-    margin-top: 100px;
+.doctor-profile-details {
+  margin-top: 100px;
 }
-.doctor-details-p{
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: rgba(92, 87, 87, 0.748);
+.doctor-profile-details-p {
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: rgba(92, 87, 87, 0.748);
+  margin-bottom: 10%;
 }
 
+.feedback-send-btn {
+  background: linear-gradient(to right, #a085ff, #6b6aff);
+  width: 15%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px ;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.feedback-send-btn:hover {
+  background: linear-gradient(to right, #957dff, #5e5aff);
+  box-shadow: 0 0 5px #5f76af ;
+  border: none;
+}
