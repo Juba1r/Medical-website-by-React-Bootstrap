@@ -81,14 +81,16 @@ const ReadAboutDis = () => {
       <Container>
         <Form className="d-flex justify-content-center mt-3 mb-5">
           <InputGroup className="w-50">
-            <Form.Control
-              type="text"
-              placeholder="Search for a disease"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="border-3 p-3 mt-4"
-            />
-            <i className="bi bi-search fs-4 ms-3 mt-4 icon-search"></i>
+            <div className="search-box-disease">
+              <Form.Control
+                type="text"
+                placeholder="Search for a disease"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="border-3 input-field-disease"
+              />
+              <i className="bi bi-search fs-4  search-icon-disease"></i>
+            </div>
           </InputGroup>
         </Form>
 

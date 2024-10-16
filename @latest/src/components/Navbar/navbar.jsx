@@ -26,7 +26,7 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="navbarNav" />
 
         {/* Links and buttons */}
-        <Navbar.Collapse id="navbarNav" className="justify-content-end">
+        <Navbar.Collapse id="navbarNav" className="justify-content-end align-items-center">
           <Nav className="me-5 gap-4">
             <NavLink to="/Home" className="btn-grad border-0 fw-bold">
               Home
@@ -45,6 +45,7 @@ const CustomNavbar = () => {
             <Link to="/Login" className="log button-U fw-bold">
               Login
             </Link>
+          
             <Link to="/Register" className="reg button-U fw-bold register-btn">
               Register
             </Link>

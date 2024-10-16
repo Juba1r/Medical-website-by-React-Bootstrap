@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Container, Row, Col, Form, InputGroup } from "react-bootstrap";
-import './doctor.css'
+import "./doctor.css";
 import doctorimg1 from "../../../assets/doctor1.png";
 import doctorimg2 from "../../../assets/doctor2.png";
 import doctorsimg from "../../../assets/doctorhero.png";
+import { Link } from "react-router-dom";
 
 const DoctorTeam = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -69,17 +70,17 @@ const DoctorTeam = () => {
 
       {/* Search Bar */}
       <Form className="d-flex justify-content-center mt-3 mb-5">
-        <InputGroup className="w-50">
-          <Form.Control
-            type="text"
-            placeholder="Search for a doctor"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="border-3 p-3 mt-4"
-          />
-          <i className="bi bi-search fs-4 ms-3 mt-4 icon-search"></i>
-
-
+        <InputGroup className="justify-content-center mt-4">
+          <div className="search-box-doctor">
+            <Form.Control
+              type="text"
+              placeholder="Search for a doctor"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="border-3 input-field-doctor"
+            />
+            <i className="bi bi-search fs-4 search-icon-doctor"></i>
+          </div>
         </InputGroup>
       </Form>
 
@@ -103,9 +104,12 @@ const DoctorTeam = () => {
                   <div className="doctor-info p-4">
                     <h5 className="doctor-name">{doctor.name}</h5>
                     <p className="doctor-title text-muted">{doctor.title}</p>
-                    <button className="button-D fw-bold mt-2">
+                    <Link
+                      to="/doctorsProfile"
+                      className="button-D fw-bold mt-2"
+                    >
                       Read more & Rate <i className="bi bi-arrow-right"></i>
-                    </button>
+                    </Link>
                   </div>
                 </Col>
               </Row>

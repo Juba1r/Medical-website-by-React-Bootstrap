@@ -78,49 +78,33 @@
 /* Home Button CSS */
 
 .btn-grad:hover {
-  background-image: linear-gradient(
-    to top,
-    #ffff 0%,
-    #2d6f81 51%,
-    #0dcaf0 100%
-  );
-  padding: 5px 5px 2px 2px;
+  background-color: #a9bcd5f9;
+  transition: 0.3s ease;
   text-align: center;
-  /* text-transform: uppercase; */
-  transition: 0.5s;
-  /* background-size: 100% auto; */
-  color: white;
-  box-shadow: 0 0 20px #eee;
+  color: #000;
   border-radius: 10px;
   display: block;
+  /* padding: 2px; */
 }
 .active {
-  background-image: linear-gradient(
-    to top,
-    #ffff 0%,
-    #2d6f81 51%,
-    #0dcaf0 100%
-  );
-  padding: 10px 10px;
+  background-color: #a9bcd5f9;
+  transition: 0.3s ease-in-out;
   text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 0 20px #eee;
+  /* padding: 10px; */
+  color: black;
   border-radius: 10px;
   display: block;
 }
 
 .btn-grad {
-  background-position: right center;
   color: #000;
+  text-align: center;
   font-size: 18px;
   text-decoration: none;
 }
 .active {
-  background-position: right center;
-  color: #ededed;
+  color: #000000;
+  text-align: center;
   font-size: 18px;
   text-decoration: none;
 }

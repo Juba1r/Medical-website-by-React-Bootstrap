@@ -3,10 +3,10 @@ import "./location.css";
 const location = () => {
   return (
     <div className="container-fluid">
-      <div className="d-flex justify-content-center ">
-        <form className="searchbox d-flex align-items-center align-self-center">
+      <div className="d-flex justify-content-center mt-5 ">
+        <form className=" d-flex align-items-center gap-1">
           <input type="search" placeholder="Search your location.." />
-          <button className="button-S reg mt-3">Search</button>
+          <button className="button-S reg ">Search</button>
         </form>
       </div>
       <div className="gmap container mt-5 mb-5">

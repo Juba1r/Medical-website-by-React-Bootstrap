@@ -1,0 +1,13 @@
+.input-group-text-login {
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  right: 35px;
+  border: none;
+  
+}
+
+
+.password-field-login{
+    width: 100%;
+}

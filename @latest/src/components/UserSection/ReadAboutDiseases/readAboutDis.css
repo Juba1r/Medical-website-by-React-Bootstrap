@@ -33,3 +33,23 @@
 .floating-card:hover:before {
   opacity: 1;
 }
+
+/* search box css */
+
+.search-box-disease {
+  cursor: pointer;
+  color: #572a77;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-icon-disease {
+  position: relative;
+  top: 0;
+  right: 35px;
+}
+.input-field-disease {
+  width: 80%;
+}

@@ -3,11 +3,7 @@ import "./register.css";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEye,
-  faEyeSlash,
-  faCalendarAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const Register = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -24,7 +20,6 @@ const Register = () => {
 
       <div className="toggle-role mb-4 d-flex justify-content-end">
         <Button
-          className=""
           variant={selectedRole === "Patient" ? "primary" : "light"}
           onClick={() => setSelectedRole("Patient")}
         >
@@ -97,9 +92,6 @@ const Register = () => {
             <Form.Group controlId="dob">
               <div className="input-group">
                 <Form.Control type="date" className="border-3 p-3" />
-                <span className="input-group-text">
-                  <FontAwesomeIcon icon={faCalendarAlt} />
-                </span>
               </div>
             </Form.Group>
           </Col>
@@ -108,14 +100,14 @@ const Register = () => {
         <Row className="mt-4">
           <Col md={6}>
             <Form.Group controlId="password">
-              <div className="input-group">
+              <div className="input-group input-with-icon">
                 <Form.Control
                   type={isPasswordVisible ? "text" : "password"}
                   placeholder="Password"
-                  className="border-3 p-3"
+                  className="border-3 p-3 input-field-reg"
                 />
                 <span
-                  className="input-group-text"
+                  className="input-group-text eye-icon"
                   onClick={togglePasswordVisibility}
                 >
                   <FontAwesomeIcon
@@ -127,14 +119,14 @@ const Register = () => {
           </Col>
           <Col md={6}>
             <Form.Group controlId="confirmPassword">
-              <div className="input-group">
+              <div className="input-group input-with-icon">
                 <Form.Control
                   type={isPasswordVisible ? "text" : "password"}
                   placeholder="Confirm Password"
                   className="border-3 p-3"
                 />
                 <span
-                  className="input-group-text"
+                  className="input-group-text eye-icon"
                   onClick={togglePasswordVisibility}
                 >
                   <FontAwesomeIcon
@@ -146,7 +138,7 @@ const Register = () => {
           </Col>
         </Row>
       </Form>
-      <div className="d-flex justify-content-center mt-5 mb-3 ">
+      <div className="d-flex justify-content-center mt-5 mb-3">
         <Button variant="primary" type="submit" className="button-H reg-H">
           Register
         </Button>

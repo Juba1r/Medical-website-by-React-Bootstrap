@@ -1,7 +1,5 @@
 import "./appointment.css";
 import { Form, Button, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarAlt, faClock } from "@fortawesome/free-solid-svg-icons";
 
 const AppointmentForm = () => {
   return (
@@ -17,9 +15,6 @@ const AppointmentForm = () => {
                 placeholder="Appointment Date"
                 className="border-3 p-3"
               />
-              <span className="ms-2">
-                <FontAwesomeIcon icon={faCalendarAlt} />
-              </span>
             </div>
           </Form.Group>
 
@@ -31,9 +26,6 @@ const AppointmentForm = () => {
                 placeholder="Appointment Time"
                 className="border-3 p-3"
               />
-              <span className="ms-2">
-                <FontAwesomeIcon icon={faClock} />
-              </span>
             </div>
           </Form.Group>
         </Row>

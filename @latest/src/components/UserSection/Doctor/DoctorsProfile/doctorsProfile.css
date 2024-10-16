@@ -1,0 +1,24 @@
+.doc-bg{
+    background-color: rgb(188, 206, 239);
+    width: auto;
+    height: 600px;
+    border-radius: 70px;
+    box-shadow: 2px 2px 20px #BCD4E6;
+    
+}
+
+.doctor-title{
+    font-size: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    letter-spacing: 4px;
+    
+
+}
+
+.doctor-dsgtn{
+    letter-spacing: 2px;
+}
+

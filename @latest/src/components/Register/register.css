@@ -8,6 +8,27 @@
 
 .input-group-text {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* Styling for the input field with an icon */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .form-control {
+  padding-right: 40px; /* Add padding to make space for the icon */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .p-H {

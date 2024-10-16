@@ -69,10 +69,10 @@ const Login = () => {
                 <Form.Control
                   type={isPasswordVisible ? "text" : "password"}
                   placeholder="Password"
-                  className="border-3 p-3 rounded-4"
+                  className="border-3 p-3 rounded-4 password-field-login"
                 />
                 <span
-                  className="input-group-text"
+                  className="input-group-text-login"
                   onClick={togglePasswordVisibility}
                 >
                   <FontAwesomeIcon
