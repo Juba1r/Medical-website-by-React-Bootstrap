@@ -11,6 +11,7 @@ import Doctor from "./components/UserSection/Doctor/doctor";
 import ReadAboutDiseases from "./components/UserSection/ReadAboutDiseases/readAboutDis";
 import Diagnosis from "./components/UserSection/Diagnosis/diagnosis";
 import DoctorsProfile from "./components/UserSection/Doctor/DoctorsProfile/doctorsProfile";
+import Profile from "./components/UserSection/Profile/profile";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "/doctorsProfile",
         element: <DoctorsProfile />,
+      },
+      {
+        path: "/Profile",
+        element: <Profile />,
       },
     ],
   },

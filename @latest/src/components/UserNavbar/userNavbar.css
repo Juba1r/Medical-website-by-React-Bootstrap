@@ -27,7 +27,6 @@
   background-color: rgba(255, 255, 255, 1);
   border: 1px solid #877bae;
   text-decoration: none;
-  
 }
 
 .button-A:hover {
@@ -66,13 +65,13 @@
   padding: 5px 10px;
   cursor: pointer;
   font-size: 30px;
+  color: #000;
 }
 
-.bell-icon{
-    font-size: 30px;
-    color: #877bae;
-    cursor: pointer;
-    
+.bell-icon {
+  font-size: 30px;
+  color: #877bae;
+  cursor: pointer;
 }
 
 /* Media Queries */

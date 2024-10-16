@@ -54,20 +54,39 @@ const doctorsProfile = () => {
             className="border-1 p-3 w-75 rounded-3"
           />
 
-          <button className="feedback-send-btn d-flex justify-content-center">Send</button>
+          <button className="feedback-send-btn d-flex justify-content-center">
+            Send
+          </button>
         </div>
-        <div className="col-6 d-flex justify-content-center flex-column fw-medium">
+        <div className="col-6 d-flex justify-content-center flex-column fw-medium mb-5">
           <h3>Latest Feedbacks</h3>
           <div className="h-100 p-3 w-100 border border-3 rounded-3 mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut! Sint officiis quam nobis cumque quidem fugiat eius in similique voluptate temporibus veniam optio dolor laudantium, esse libero. Exercitationem commodi consectetur adipisci, ea optio veritatis necessitatibus impedit enim et incidunt ?</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut!
+              Sint officiis quam nobis cumque quidem fugiat eius in similique
+              voluptate temporibus veniam optio dolor laudantium, esse libero.
+              Exercitationem commodi consectetur adipisci, ea optio veritatis
+              necessitatibus impedit enim et incidunt ?
+            </p>
           </div>
           <div className="h-100 p-3 w-100 border border-3 rounded-3 mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut! Sint officiis quam nobis cumque quidem fugiat eius in similique voluptate temporibus veniam optio dolor laudantium, esse libero. Exercitationem </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut!
+              Sint officiis quam nobis cumque quidem fugiat eius in similique
+              voluptate temporibus veniam optio dolor laudantium, esse libero.
+              Exercitationem{" "}
+            </p>
           </div>
           <div className="h-100 p-3 w-100 border border-3 rounded-3 mt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut! Sint officiis quam nobis cumque quidem fugiat eius in similique voluptate temporibus veniam optio dolor laudantium, esse libero. Exercitationem commodi consectetur adipisci, ea optio veritatis necessitatibus impedit enim et incidunt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quam!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut!
+              Sint officiis quam nobis cumque quidem fugiat eius in similique
+              voluptate temporibus veniam optio dolor laudantium, esse libero.
+              Exercitationem commodi consectetur adipisci, ea optio veritatis
+              necessitatibus impedit enim et incidunt Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Hic, quam!
+            </p>
           </div>
-          
         </div>
       </div>
     </div>

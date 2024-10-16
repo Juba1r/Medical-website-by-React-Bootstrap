@@ -67,9 +67,9 @@ const userNavbar = () => {
             <Link to="/Login" className="log-A button-A fw-bold">
               Qkycu
             </Link>
-            <div className="pro-icon-div">
+            <Link to="/Profile" className="pro-icon-div cursor-pointer">
               <i className="bi bi-person-circle"></i>
-            </div>
+            </Link>
           </div>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,11 @@
+.profile-left-section {
+  background-color: rgb(143, 167, 179);
+  width: 100%;
+  height: 641px;
+}
+.profile-left-section h2 {
+  margin: 0px 0px 120px 130px;
+}
+.profile-icon {
+  margin: 0px 0px 0px -140px;
+}
