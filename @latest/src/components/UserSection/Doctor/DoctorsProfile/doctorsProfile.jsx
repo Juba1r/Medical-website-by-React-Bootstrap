@@ -24,14 +24,33 @@ const doctorsProfile = () => {
         </div>
       </div>
       <div className="container mt-5">
-        <div className="align-items-center">
-          <h2>Doctor Details</h2>
+        <div className="doctor-details">
+          <h2 className="d-flex justify-content-center">Doctor Details</h2>
 
-          <p>
+          <p className="d-flex justify-content-center mt-5 doctor-details-p">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            distinctio!
+            distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Fugit error, sequi aliquid fuga corrupti quod sapiente quo minus
+            praesentium! Dolorum facilis vel debitis doloremque distinctio
+            maiores alias illo, tempora at! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Molestiae, harum voluptate nesciunt
+            eos quibusdam ullam. Delectus, fugit molestiae magni quia dolor
+            voluptatibus officia. Facere dicta at mollitia ab nobis minus atque
+            illum, autem doloremque quia, asperiores repudiandae aliquam ratione
+            repellat? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            In, ad, itaque ipsam voluptate praesentium laudantium eaque,
+            voluptatem deleniti voluptatum eligendi vero odio ducimus beatae.
+            Necessitatibus minima architecto voluptate culpa! Vel iusto a quidem
+            alias culpa odit officiis aut itaque. Qui! Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Dolorum, corrupti?
           </p>
         </div>
+      </div>
+      <div className="container row">
+        <div className="col d-flex justify-content-center">
+          <input type="text" placeholder="Give a feedback" className="border-2 p-4" />
+        </div>
+        <div className="col"></div>
       </div>
     </div>
   );

@@ -21,4 +21,12 @@
 .doctor-dsgtn{
     letter-spacing: 2px;
 }
+.doctor-details{
+    margin-top: 100px;
+}
+.doctor-details-p{
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: rgba(92, 87, 87, 0.748);
+}
 
