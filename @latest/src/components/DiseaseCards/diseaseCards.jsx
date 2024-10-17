@@ -2,6 +2,7 @@ import "./diseaseCards.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import disimg from "../../assets/diseasecardimg.png";
+import { Link } from "react-router-dom";
 
 const DiseaseCards = () => {
   const diseases = [
@@ -47,9 +48,9 @@ const DiseaseCards = () => {
                 <Card.Body className="text-center">
                   <Card.Title className="fw-bold">{disease.title}</Card.Title>
                   <Card.Text>{disease.description}</Card.Text>
-                  <button className="button-U fw-bold rounded-pill px-4">
+                  <Link to="/ReadMoreDiseases" className="button-U text-decoration-none fw-bold rounded-pill px-4">
                     Read more <i className="bi bi-arrow-right"></i>
-                  </button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>

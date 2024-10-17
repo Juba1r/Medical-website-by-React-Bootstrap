@@ -1,0 +1,15 @@
+.text-justify {
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.causes-section-p {
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: rgba(92, 87, 87, 0.748);
+  margin-bottom: 10%;
+}

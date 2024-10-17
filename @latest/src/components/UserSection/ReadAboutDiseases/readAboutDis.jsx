@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Form, InputGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import disimg from "../../../assets/diseasecardimg.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ReadAboutDis = () => {
   const diseases = [
@@ -107,9 +108,12 @@ const ReadAboutDis = () => {
                 <Card.Body className="text-center">
                   <Card.Title className="fw-bold">{disease.title}</Card.Title>
                   <Card.Text>{disease.description}</Card.Text>
-                  <button className="button-U fw-bold rounded-pill px-4">
+                  <Link
+                    to="/ReadMoreDiseases"
+                    className="button-U fw-bold rounded-pill px-4 text-decoration-none "
+                  >
                     Read more <i className="bi bi-arrow-right"></i>
-                  </button>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>

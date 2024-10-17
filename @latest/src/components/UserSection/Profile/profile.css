@@ -1,11 +1,39 @@
 .profile-left-section {
-  background-color: rgb(143, 167, 179);
+  background-color: #bcd4e6;
   width: 100%;
   height: 641px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.profile-left-section h2 {
-  margin: 0px 0px 120px 130px;
+
+.profile-image {
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .profile-icon {
-  margin: 0px 0px 0px -140px;
+  margin-top: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.edit-profile-btn {
+  background: linear-gradient(to right, #a085ff, #6b6aff);
+  width: 15%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background: linear-gradient(to right, #957dff, #5e5aff);
+  box-shadow: 0 0 5px #5f76af;
+  border: none;
 }

@@ -12,6 +12,7 @@ import ReadAboutDiseases from "./components/UserSection/ReadAboutDiseases/readAb
 import Diagnosis from "./components/UserSection/Diagnosis/diagnosis";
 import DoctorsProfile from "./components/UserSection/Doctor/DoctorsProfile/doctorsProfile";
 import Profile from "./components/UserSection/Profile/profile";
+import ReadMoreDiseases from "./components/UserSection/ReadAboutDiseases/ReadMoreDiseases/readMoreDis";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "/Profile",
         element: <Profile />,
+      },
+      {
+        path: "/ReadMoreDiseases",
+        element: <ReadMoreDiseases />,
       },
     ],
   },

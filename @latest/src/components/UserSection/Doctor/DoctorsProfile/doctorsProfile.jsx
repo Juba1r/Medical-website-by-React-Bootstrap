@@ -23,7 +23,7 @@ const doctorsProfile = () => {
           <br />
         </div>
       </div>
-      <div className="container mt-5">
+      <div className="container">
         <div className="doctor-profile-details">
           <h2 className="d-flex justify-content-center">Doctor Details</h2>
 
