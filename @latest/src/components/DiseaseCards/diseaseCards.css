@@ -1,5 +1,5 @@
 /* Styling for the floating card effect */
-.floating-card {
+.floating-disease-card {
   background-color: white;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -8,13 +8,13 @@
 }
 
 /* Floating effect on hover */
-.floating-card:hover {
+.floating-disease-card:hover {
   transform: translateY(-10px); /* Moves the card slightly up */
   box-shadow: 0 15px 40px rgba(198, 72, 218, 0.608); /* Increased blur and intensity */
 }
 
 /* Blurry background shadow for extra floating effect */
-.floating-card:before {
+.floating-disease-card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@
 }
 
 /* Enhances the blur effect on hover */
-.floating-card:hover:before {
+.floating-disease-card:hover:before {
   opacity: 1;
 }
 

@@ -1,7 +1,7 @@
 import { Container, Row, Col, Button, Table } from "react-bootstrap";
 import "./setSchedule.css";
 
-const ProfileSchedule = () => {
+const SetSchedule = () => {
   const renderScheduleButtons = () => {
     const daysInMonth = 31; // Assuming July
     let buttons = [];
@@ -81,4 +81,4 @@ const ProfileSchedule = () => {
   );
 };
 
-export default ProfileSchedule;
+export default SetSchedule;

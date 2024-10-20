@@ -119,10 +119,10 @@ const AdminPosts = () => {
   );
 
   return (
-    <div className="container post-main-container p-3">
-      <div className="container bg-light mt-5 rounded-5  p-3">
+    <div className="container post-main-container p-5">
+      <div className="container post-main-second-container p-3">
 
-        <h3 className="text-center mb-4 mt-3">All posts</h3>
+        <h3 className="text-center mb-4 fw-bolder ">All posts</h3>
 
         {/* Search Bar */}
         <div className="row justify-content-center mb-3">

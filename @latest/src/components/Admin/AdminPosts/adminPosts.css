@@ -1,6 +1,10 @@
 .post-main-container {
-  background-color: #d4cfcf81;
-  
+  background-color: #d4cfcf52;
+}
+.post-main-second-container {
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Custom action icon styles */

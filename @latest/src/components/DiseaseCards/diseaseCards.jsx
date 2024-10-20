@@ -39,7 +39,7 @@ const DiseaseCards = () => {
         <Row className="justify-content-center">
           {diseases.map((disease) => (
             <Col key={disease.id} md={4} className="mt-2 mb-4 d-flex">
-              <Card className="floating-card  p-3 rounded-5 border-0 h-100 gap-3 ">
+              <Card className="floating-disease-card  p-3 rounded-5 border-0 h-100 gap-3 ">
                 <Card.Img
                   variant="top"
                   src={disease.img}
@@ -48,7 +48,10 @@ const DiseaseCards = () => {
                 <Card.Body className="text-center">
                   <Card.Title className="fw-bold">{disease.title}</Card.Title>
                   <Card.Text>{disease.description}</Card.Text>
-                  <Link to="/ReadMoreDiseases" className="button-U text-decoration-none fw-bold rounded-pill px-4">
+                  <Link
+                    to="/ReadMoreDiseases"
+                    className="button-U text-decoration-none fw-bold rounded-pill px-4"
+                  >
                     Read more <i className="bi bi-arrow-right"></i>
                   </Link>
                 </Card.Body>

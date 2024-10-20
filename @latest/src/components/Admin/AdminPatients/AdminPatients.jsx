@@ -80,8 +80,8 @@ const AdminPatients = () => {
 
   return (
     <div className="admin-patients-container p-5">
-      <div className="container patients-container">
-        <h3 className="mb-4">All Patients</h3>
+      <div className="container patients-container ">
+        <h3 className="mb-4 text-center fw-bolder">All Patients</h3>
         <div className="table-header d-flex justify-content-between  align-items-center">
           <div className="table-col-name">First and Last Name</div>
           <div className="table-col-email">Email</div>
