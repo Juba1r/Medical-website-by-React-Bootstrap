@@ -1,0 +1,108 @@
+.admin-pro-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #877bae;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #000;
+} /* Sidebar CSS */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(45deg, #6a11cb, #877bae);
+  color: white;
+  padding-top: 80px;
+  position: fixed;
+  top: 0px; 
+  left: 0;
+  height: 100%;
+  
+}
+
+.sidebar-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align the hamburger icon to the left */
+  cursor: pointer; /* Make the icon a clickable pointer */
+  background-color: #6a11cb; /* Give it a background for visibility */
+}
+
+.fa-bars {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid white;
+  width: 250px;
+  color: aliceblue;
+}
+
+
+
+.sidebar-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #000;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Add margin to account for the fixed sidebar */
+  /* Add padding for some space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .admin-layout .sidebar.closed + .main-content {
+    margin-left: 0;
+  }
+
+  /* Ensure the hamburger icon stays fixed in place on small screens */
+  .sidebar-header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr; /* Stack the cards in one column on smaller screens */
+  }
+}

@@ -78,7 +78,7 @@
 /* Home Button CSS */
 
 .btn-grad:hover {
-  background-color: #a9bcd5f9;
+  background-color: #bcd4e6;
   transition: 0.3s ease;
   text-align: center;
   color: #000;
@@ -87,13 +87,15 @@
   /* padding: 2px; */
 }
 .active {
-  background-color: #a9bcd5f9;
+  background-color: #bcd4e6;
   transition: 0.3s ease-in-out;
   text-align: center;
-  /* padding: 10px; */
   color: black;
   border-radius: 10px;
   display: block;
+
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .btn-grad {
@@ -101,10 +103,5 @@
   text-align: center;
   font-size: 18px;
   text-decoration: none;
-}
-.active {
-  color: #000000;
-  text-align: center;
-  font-size: 18px;
-  text-decoration: none;
+  padding: 5px;
 }

@@ -1,22 +1,16 @@
 import { useState } from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import signin from "../../assets/signin.png";
-import { useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./login.css";
 
-const Login = () => {
+const DoctorLogin = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  const [selectedRole, setSelectedRole] = useState("Patient");
-  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
-  };
-
-  const handleLogin = () => {
-    navigate("/Appointment");
   };
 
   return (
@@ -28,27 +22,15 @@ const Login = () => {
         </Col>
         <Col md={6}>
           <div className="toggle-role mb-4 d-flex justify-content-end">
-            <Button
-              className=""
-              variant={selectedRole === "Patient" ? "primary" : "light"}
-              onClick={() => setSelectedRole("Patient")}
-            >
+            <NavLink to="/PatientLogin" className="button-L">
               Patient
-            </Button>
-            <Button
-              variant={selectedRole === "Doctor" ? "primary" : "light"}
-              onClick={() => setSelectedRole("Doctor")}
-              className="ms-2"
-            >
+            </NavLink>
+            <NavLink to="/DoctorLogin" className=" button-L ms-2">
               Doctor
-            </Button>
-            <Button
-              variant={selectedRole === "Doctor" ? "primary" : "light"}
-              onClick={() => setSelectedRole("Admin")}
-              className="ms-2"
-            >
+            </NavLink>
+            <NavLink to="/AdminLogin" className=" button-L ms-2">
               Admin
-            </Button>
+            </NavLink>
           </div>
         </Col>
       </Row>
@@ -81,13 +63,9 @@ const Login = () => {
                 </span>
               </div>
               <div className="d-flex justify-content-start my-4 ">
-                <Button
-                  variant="primary"
-                  onClick={handleLogin}
-                  className="button-H reg-H"
-                >
+                <Link to="/Appointment" className="button-H reg-H">
                   Login
-                </Button>
+                </Link>
               </div>
             </Form.Group>
           </Col>
@@ -100,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default DoctorLogin;

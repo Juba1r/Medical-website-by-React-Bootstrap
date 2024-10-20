@@ -1,0 +1,71 @@
+/* Main container to hold the cards */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  grid-gap: 20px; /* Spacing between cards */
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 200px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 250px;
+  }
+
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .admin-layout .sidebar.closed + .main-content {
+    margin-left: 0;
+  }
+
+  /* Ensure the hamburger icon stays fixed in place on small screens */
+  .sidebar-header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr; /* Stack the cards in one column on smaller screens */
+  }
+}

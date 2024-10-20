@@ -11,7 +11,9 @@ const CustomNavbar = () => {
         {/* Logo and Name */}
         <Navbar.Brand href="#">
           <div className="d-flex align-items-center">
-            <img src={logo} alt="Logo" className="me-2 logo" />
+            <Link to="/Home">
+              <img src={logo} alt="Logo" className="me-2 logo" />
+            </Link>
             <div className="brand-name">
               <strong>
                 Qendra Klinike Universitare e Kosoves
@@ -26,7 +28,10 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="navbarNav" />
 
         {/* Links and buttons */}
-        <Navbar.Collapse id="navbarNav" className="justify-content-end align-items-center">
+        <Navbar.Collapse
+          id="navbarNav"
+          className="justify-content-end align-items-center"
+        >
           <Nav className="me-5 gap-4">
             <NavLink to="/Home" className="btn-grad border-0 fw-bold">
               Home
@@ -42,10 +47,10 @@ const CustomNavbar = () => {
             </NavLink>
           </Nav>
           <div className="d-flex gap-2">
-            <Link to="/Login" className="log button-U fw-bold">
+            <Link to="/PatientLogin" className="log button-U fw-bold">
               Login
             </Link>
-          
+
             <Link to="/Register" className="reg button-U fw-bold register-btn">
               Register
             </Link>

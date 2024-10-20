@@ -11,7 +11,9 @@ const userNavbar = () => {
         {/* Logo and Name */}
         <Navbar.Brand href="#">
           <div className="d-flex align-items-center">
-            <img src={logo} alt="Logo" className="me-2 logo" />
+            <Link to="/Home">
+              <img src={logo} alt="Logo" className="me-2 logo" />
+            </Link>
             <div className="brand-name">
               <strong>
                 Qendra Klinike Universitare e Kosoves
@@ -64,7 +66,7 @@ const userNavbar = () => {
           {/* Login and Profile Icon */}
           <div className="d-flex gap-2 ms-auto mt-2">
             <i className="bi bi-bell bell-icon"></i>
-            <Link to="/Login" className="log-A button-A fw-bold">
+            <Link to="/PatientLogin" className="log-A button-A fw-bold">
               Qkycu
             </Link>
             <Link to="/Profile" className="pro-icon-div cursor-pointer">
