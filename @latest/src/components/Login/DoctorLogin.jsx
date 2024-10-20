@@ -63,7 +63,7 @@ const DoctorLogin = () => {
                 </span>
               </div>
               <div className="d-flex justify-content-start my-4 ">
-                <Link to="/Appointment" className="button-H reg-H">
+                <Link to="/DoctorAppointment" className="button-H reg-H">
                   Login
                 </Link>
               </div>

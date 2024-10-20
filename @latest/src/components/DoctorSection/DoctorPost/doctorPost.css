@@ -1,0 +1,58 @@
+.doctor-appointment-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table td img {
+  border-radius: 50%;
+}
+
+.dropdown-toggle {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pagination-container {
+  margin-top: 20px;
+}
+
+.pagination-container .btn-outline-primary {
+  border-color: #007bff;
+  color: #af78df;
+  border-color: #af78df;
+}
+
+.pagination-container .btn-outline-primary:hover {
+  background-color: #af78df;
+  color: #fff;
+}
+
+.text-success {
+  cursor: pointer;
+}
+
+.text-danger {
+  cursor: pointer;
+}
+
+.text-success:hover,
+.text-danger:hover {
+  opacity: 0.7;
+}

@@ -1,7 +1,7 @@
 import "./doctorsProfile.css";
 import doctorsimg from "../../../../assets/doctorsprofileimg.png";
 
-const doctorsProfile = () => {
+const DoctorsProfile = () => {
   return (
     <div className="container-fluid">
       <div className="doc-bg p-0 mt-5 row">
@@ -93,4 +93,4 @@ const doctorsProfile = () => {
   );
 };
 
-export default doctorsProfile;
+export default DoctorsProfile;

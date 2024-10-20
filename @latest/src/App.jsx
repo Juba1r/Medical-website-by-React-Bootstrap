@@ -22,6 +22,11 @@ import AdminDoctors from "./components/Admin/AdminDoctors/AdminDoctors";
 import AdminPosts from "./components/Admin/AdminPosts/adminPosts";
 import AdminProfile from "./components/Admin/AdminProfile/adminProfile";
 import SetSchedule from "./components/Admin/SetSchedule/setSchedule";
+import DoctorLayout from "./components/doctorLayout";
+import DoctorAppointment from "./components/DoctorSection/DoctorAppointment/doctorAppointment";
+import DoctorPost from "./components/DoctorSection/DoctorPost/doctorPost";
+import DoctorPatient from "./components/DoctorSection/DoctorPatient/doctorPatient";
+import DoctorProfile from "./components/DoctorSection/DoctorProfile/doctorProfile";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -118,6 +123,28 @@ const router = createBrowserRouter([
       {
         path: "/SetSchedule",
         element: <SetSchedule />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <DoctorLayout />,
+    children: [
+      {
+        path: "/DoctorAppointment",
+        element: <DoctorAppointment />,
+      },
+      {
+        path: "/DoctorPost",
+        element: <DoctorPost />,
+      },
+      {
+        path: "/DoctorPatient",
+        element: <DoctorPatient />,
+      },
+      {
+        path: "/DoctorProfile",
+        element: <DoctorProfile />,
       },
     ],
   },
