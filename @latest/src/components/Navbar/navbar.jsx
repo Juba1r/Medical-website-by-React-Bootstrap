@@ -7,8 +7,7 @@ import "./navbar.css";
 const CustomNavbar = () => {
   return (
     <Navbar bg="light" expand="lg" className="px-2">
-      <Container fluid>
-        {/* Logo and Name */}
+      <Container fluid className="p-0">
         <Navbar.Brand href="#">
           <div className="d-flex align-items-center">
             <Link to="/Home">
@@ -24,10 +23,8 @@ const CustomNavbar = () => {
           </div>
         </Navbar.Brand>
 
-        {/* Toggle for mobile view */}
-        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Toggle aria-controls="navbarNav " />
 
-        {/* Links and buttons */}
         <Navbar.Collapse
           id="navbarNav"
           className="justify-content-end align-items-center"

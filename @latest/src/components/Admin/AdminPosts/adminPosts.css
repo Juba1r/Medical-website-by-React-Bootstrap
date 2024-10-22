@@ -1,10 +1,13 @@
 .post-main-container {
   background-color: #d4cfcf52;
+  padding: 20px;
 }
+
 .post-main-second-container {
   background-color: white;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 /* Custom action icon styles */
@@ -27,4 +30,94 @@
 th,
 td {
   vertical-align: middle; /* Ensures text is centered vertically in table cells */
+}
+
+/* Input search box styling */
+input.form-control {
+  padding: 10px 20px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Hide the checkbox column and make other columns stack on small screens */
+  th:nth-child(1),
+  td:nth-child(1) {
+    display: none;
+  }
+
+  /* Table will scroll horizontally if necessary */
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  /* Make actions and table stack vertically on small screens */
+  th,
+  td {
+    display: block;
+    width: 100%;
+    text-align: right; /* Align text to the right */
+    position: relative;
+    padding-left: 50%; /* Leave space for labels */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  th::before,
+  td::before {
+    content: attr(data-label); /* Add a label for the data on mobile */
+    position: absolute;
+    left: 15px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  th {
+    text-align: left; /* Override text alignment for table headers */
+  }
+
+  td {
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  /* Action buttons adjust to full width */
+  td .action-icon {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Smaller screens like mobile phones */
+  .post-main-second-container {
+    padding: 15px;
+  }
+
+  .table-responsive {
+    margin-top: 10px;
+  }
+
+  /* Adjust search input padding */
+  input.form-control {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust table padding and font size for small screens */
+  th,
+  td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  td .action-icon {
+    font-size: 1.2rem;
+  }
 }

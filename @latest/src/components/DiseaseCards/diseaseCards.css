@@ -5,6 +5,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 30px 30px #572a77; /* Initial shadow */
   position: relative;
+  
+  
+  
 }
 
 /* Floating effect on hover */
@@ -34,4 +37,25 @@
   opacity: 1;
 }
 
+/* Curve background for the left section */
+.curved-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    222deg,
+    #a6c9ff,
+    #e0ebff
+  ); /* Adjust colors to match */
+  clip-path: polygon(0 0, -10% 0, 60% 60%, 0% 120%);
+  z-index: -1;
+  
+}
 
+.section-container {
+  position: relative;
+  overflow: hidden;
+  
+}

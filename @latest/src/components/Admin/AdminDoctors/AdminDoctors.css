@@ -1,9 +1,10 @@
-/* AdminDoctors.css */
+/* Main container styling */
 .admin-doctors-container {
   background-color: #d4cfcf52;
   padding: 20px;
 }
 
+/* Container for doctors listing */
 .doctors-container {
   background-color: white;
   padding: 20px;
@@ -27,14 +28,17 @@
   background-color: #aaa;
 }
 
+/* Search box styling */
 .search-container {
   margin-bottom: 20px;
 }
 
+/* Table-like layout */
 .table {
   width: 100%;
 }
 
+/* Header row styling */
 .table-header,
 .doctor-row {
   display: flex;
@@ -47,13 +51,12 @@
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   color: #9a9292;
-  gap: 100px;
 }
 
+/* Individual column styling */
 .table-col {
   text-align: left;
   padding: 0 10px;
-  gap: 100px;
   white-space: nowrap;
 }
 
@@ -77,6 +80,7 @@
   width: 10%;
 }
 
+/* Set Schedule Button Styling */
 .set-schedule-btn {
   background-color: #6a11cb;
   color: white;
@@ -88,21 +92,42 @@
   background-color: #877bae;
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+  .table-header,
+  .doctor-row {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: flex-start;
+  }
+
+  /* Column widths change on smaller screens */
   .table-col-name,
   .table-col-email,
   .table-col-dob,
   .table-col-experience,
   .table-col-schedule {
-    width: 100%;
+    width: 100%; /* Each column takes full width */
     margin-bottom: 10px;
   }
 
-  .doctor-row {
-    flex-wrap: wrap;
-  }
-
+  /* Additional margin for the schedule button */
   .set-schedule-btn {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .table-header {
+    font-size: 0.9rem; /* Smaller font size for the header */
+  }
+
+  .doctor-row {
+    padding: 10px; /* Reduced padding for rows */
+  }
+
+  /* Align the search bar to look better on very small screens */
+  .search-container input {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }

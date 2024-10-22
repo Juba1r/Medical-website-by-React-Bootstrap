@@ -31,7 +31,7 @@ const userNavbar = () => {
         <Navbar.Collapse id="navbarNav" className="justify-content-center">
           <Nav className="">
             {/* First Row */}
-            <div className="nav-row mb-2">
+            <div className="user-nav-row mb-2">
               <NavLink to="/Home" className="btn-grad border-0 fw-bold">
                 Home
               </NavLink>

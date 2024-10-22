@@ -30,7 +30,10 @@ const DiseaseCards = () => {
   ];
 
   return (
-    <section className="py-5 mt-5">
+    <section className="py-5 mt-5 section-container">
+      {/* Curved Background */}
+      <div className="curved-background"></div>
+
       <Container>
         {/* Section Title */}
         <h2 className="text-center mb-5">Read about Diseases</h2>
@@ -39,7 +42,7 @@ const DiseaseCards = () => {
         <Row className="justify-content-center">
           {diseases.map((disease) => (
             <Col key={disease.id} md={4} className="mt-2 mb-4 d-flex">
-              <Card className="floating-disease-card  p-3 rounded-5 border-0 h-100 gap-3 ">
+              <Card className="floating-disease-card p-3 rounded-5 border-0 h-100 gap-3 ">
                 <Card.Img
                   variant="top"
                   src={disease.img}
@@ -48,12 +51,14 @@ const DiseaseCards = () => {
                 <Card.Body className="text-center">
                   <Card.Title className="fw-bold">{disease.title}</Card.Title>
                   <Card.Text>{disease.description}</Card.Text>
-                  <Link
-                    to="/ReadMoreDiseases"
-                    className="button-U text-decoration-none fw-bold rounded-pill px-4"
-                  >
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  <div className="d-flex justify-content-center">
+                    <Link
+                      to="/ReadMoreDiseases"
+                      className="button-U text-decoration-none fw-bold rounded-pill"
+                    >
+                      Read more <i className="bi bi-arrow-right"></i>
+                    </Link>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

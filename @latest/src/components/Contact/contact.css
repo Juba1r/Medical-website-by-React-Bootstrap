@@ -41,6 +41,29 @@ h2 {
   font-weight: bold;
 }
 
+/* Curve background for the right section */
+.curved-background-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    135deg,
+    #a6c9ff,
+    #e0ebff
+  ); /* Adjust colors to match */
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 100%;
+  clip-path: polygon(-5% 0, 105% 0, 113% 133%, -76% 15%);
+  z-index: -1;
+}
+
+.section-container {
+  position: relative;
+  overflow: hidden;
+}
+
 /* Media Queries */
 @media (max-width: 767px) {
   .form-input {

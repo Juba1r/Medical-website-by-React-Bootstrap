@@ -7,65 +7,62 @@
   background-color: #f5f5f5; /* Light grey background */
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-  grid-gap: 20px; /* Spacing between cards */
-}
-
-.card {
+.admindashboard-card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for the card */
   height: 200px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
+.admindashboard-card:hover {
+  transform: translateY(-10px);
 }
 
-.card-title {
+.admindashboard-card-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.card-number {
+.admindashboard-card-number {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .admindashboard-card {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .admindashboard-card {
+    height: 160px;
+  }
+}
+
 @media (max-width: 768px) {
-  .main-content {
-    margin-left: 250px;
+  .admindashboard-card {
+    height: 150px;
   }
+}
 
-  .sidebar {
+@media (max-width: 576px) {
+  .admindashboard-card {
     width: 100%;
-    transform: translateX(-100%);
+    height: auto;
+    max-width: 100%;
   }
 
-  .sidebar.open {
-    transform: translateX(0);
+  .admindashboard-card-title {
+    font-size: 1rem;
   }
 
-  .admin-layout .sidebar.closed + .main-content {
-    margin-left: 0;
-  }
-
-  /* Ensure the hamburger icon stays fixed in place on small screens */
-  .sidebar-header {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1100;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr; /* Stack the cards in one column on smaller screens */
+  .admindashboard-card-number {
+    font-size: 1.2rem;
   }
 }

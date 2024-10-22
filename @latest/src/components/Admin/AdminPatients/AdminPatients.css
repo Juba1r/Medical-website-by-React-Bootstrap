@@ -1,6 +1,6 @@
-/* AdminPatients.css */
 .admin-patients-container {
   background-color: #d4cfcf52;
+  padding: 20px;
 }
 
 .patients-container {
@@ -33,22 +33,29 @@
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
   color: #9a9292;
-  margin-right: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .table-col-name,
 .table-col-email,
 .table-col-appointment {
   text-align: left;
-}
-
-.table-actions {
-  width: 15%;
+  flex: 1;
+  padding: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .patient-row {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .patient-avatar {
@@ -61,10 +68,18 @@
 .patient-info {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
+
+.patient-info h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
 .patient-info p {
   font-size: 12px;
   color: #9a9292;
+  margin: 0;
 }
 
 .read-more-btn {
@@ -73,6 +88,8 @@
   border-radius: 20px;
   padding: 5px 15px;
   font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 .read-more-btn:hover {
@@ -94,17 +111,76 @@
   text-decoration: underline;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
+  .table-header {
+    display: none; /* Hide table header on smaller screens */
+  }
+
+  .patient-row {
+    flex-wrap: wrap; /* Stack rows vertically */
+    justify-content: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .patient-avatar {
+    margin-right: 10px;
+  }
+
+  .patient-info {
+    flex: 1;
+  }
+
+  .read-more-btn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
   .table-col-name,
   .table-col-email,
   .table-col-appointment {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 100%; /* Full width on smaller screens */
+    text-align: left;
+    padding: 5px 0;
   }
-  .patient-row {
-    flex-wrap: wrap;
+
+  .patient-info h5 {
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
+
+  .patient-info p {
+    font-size: 12px;
+  }
+
+  .table-col-email,
+  .table-col-appointment {
+    margin-top: 5px; /* Add space between elements */
+  }
+}
+
+@media (max-width: 576px) {
+  .patients-container {
+    padding: 15px; /* Reduce padding for small screens */
+  }
+
+  .patient-info h5 {
+    font-size: 12px; /* Reduce font size for small screens */
+  }
+
+  .patient-info p {
+    font-size: 10px; /* Reduce update text size for small screens */
+  }
+
   .read-more-btn {
-    margin-top: 10px;
+    font-size: 12px; /* Smaller button text */
+    padding: 6px 10px;
+  }
+
+  .patient-row {
+    padding: 10px 0;
   }
 }

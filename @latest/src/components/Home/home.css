@@ -63,15 +63,16 @@
 /* Extra small screens (very small mobile devices) */
 @media (max-width: 576px) {
   .title {
-    font-size: 4vw;
+    font-size: 3vw;
+    white-space: wrap;
     top: 30%;
     left: 70%;
   }
 
   .title-btn {
-    font-size: 4vw;
+    font-size: 3vw;
     top: 65%;
-    left: 50%;
+    left: 67%;
   }
 }
 

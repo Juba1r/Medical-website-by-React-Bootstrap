@@ -4,7 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const ContactForm = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 section-container">
+      {/* Curved Background */}
+      <div className="curved-background-right"></div>
+
       <Container>
         <h2 className="text-center mb-4">Contact</h2>
         <Form>
