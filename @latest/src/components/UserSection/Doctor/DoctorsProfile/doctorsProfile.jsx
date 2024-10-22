@@ -17,7 +17,7 @@ const DoctorsProfile = () => {
         <div className="col doctor-profile-title">
           <p>
             Hello, I&apos;m
-            <p className="fw-bold">Dr.MARLIYN</p>
+            <p className="fw-bold doc-name">Dr.MARLIYN</p>
             <span className="fs-5 doctor-dsgtn ">MBBS, P.hD, FCPS, FRCP</span>
           </p>
           <br />

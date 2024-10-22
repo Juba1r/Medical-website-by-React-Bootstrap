@@ -4,7 +4,7 @@ import aboutus2 from "../../assets/aboutus2.png";
 
 const aboutUs = () => {
   return (
-    <div className="container-fluid px-4 mb-5">
+    <div className="container-fluid px-5 mb-5">
       <div className="row row-cols-2">
         <div className="mt-5 ">
           <h1 className="fw-bold fs-1 mt-5">Lorem Ipsum! </h1>

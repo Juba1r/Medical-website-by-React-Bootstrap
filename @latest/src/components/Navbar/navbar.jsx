@@ -33,9 +33,6 @@ const CustomNavbar = () => {
             <NavLink to="/Home" className="btn-grad border-0 fw-bold">
               Home
             </NavLink>
-            <NavLink to="/Rreth Nesh" className="btn-grad border-0 fw-bold">
-              Rreth Nesh
-            </NavLink>
             <NavLink to="/AboutUs" className="btn-grad border-0 fw-bold">
               About Us
             </NavLink>

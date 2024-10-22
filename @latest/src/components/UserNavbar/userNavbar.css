@@ -2,11 +2,10 @@
 
 .button-A {
   cursor: pointer;
-  border: 0;
+
   border-radius: 10px;
   font-weight: 600;
-  margin: 0 10px;
-  width: 80px;
+
   box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
   transition: 0.4s;
   justify-content: center;
@@ -25,7 +24,8 @@
 .log-A {
   color: #000;
   background-color: rgba(255, 255, 255, 1);
-  border: 1px solid #877bae;
+  width: 80px;
+  height: 30px;
   text-decoration: none;
 }
 
@@ -36,10 +36,10 @@
 }
 
 /* Navbar CSS */
+
 .logo {
   width: 50px;
   height: auto;
-  
 }
 
 .brand-name {
@@ -47,14 +47,25 @@
   text-align: left;
 }
 
-/* Adjusting navbar rows */
+/* Icon Rotation */
+.gly-rotate-45 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+/* Centering the NavLinks */
+.user-nav-links {
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .user-nav-row {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin-bottom: 10px;
 }
 
 .pro-icon-div {

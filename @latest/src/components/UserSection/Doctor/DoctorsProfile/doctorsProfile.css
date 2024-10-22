@@ -5,6 +5,9 @@
   border-radius: 70px;
   box-shadow: 2px 2px 20px #bcd4e6;
 }
+.doc-name {
+  font-family: "Righteous", sans-serif;
+}
 
 .doctor-profile-title {
   font-size: 50px;
@@ -34,7 +37,7 @@
   border: none;
   border-radius: 10px;
   color: white;
-  padding: 5px ;
+  padding: 5px;
   font-size: 16px;
   font-weight: 600;
   transition: 0.3s ease;
@@ -42,6 +45,6 @@
 
 .feedback-send-btn:hover {
   background: linear-gradient(to right, #957dff, #5e5aff);
-  box-shadow: 0 0 5px #5f76af ;
+  box-shadow: 0 0 5px #5f76af;
   border: none;
 }

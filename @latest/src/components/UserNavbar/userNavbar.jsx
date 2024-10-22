@@ -29,14 +29,11 @@ const userNavbar = () => {
 
         {/* Links and buttons */}
         <Navbar.Collapse id="navbarNav" className="justify-content-center">
-          <Nav className="">
+          <Nav className="d-flex justify-content-center user-nav-links">
             {/* First Row */}
             <div className="user-nav-row mb-2">
               <NavLink to="/Home" className="btn-grad border-0 fw-bold">
                 Home
-              </NavLink>
-              <NavLink to="/Rreth Nesh" className="btn-grad border-0 fw-bold">
-                Rreth Nesh
               </NavLink>
               <NavLink to="/AboutUs" className="btn-grad border-0 fw-bold">
                 About Us
@@ -44,7 +41,6 @@ const userNavbar = () => {
               <NavLink to="/Location" className="btn-grad border-0 fw-bold">
                 Location
               </NavLink>
-
               <NavLink to="/Appointment" className="btn-grad border-0 fw-bold">
                 Appointments
               </NavLink>
@@ -64,13 +60,13 @@ const userNavbar = () => {
           </Nav>
 
           {/* Login and Profile Icon */}
-          <div className="d-flex gap-2 ms-auto mt-2">
-            <i className="bi bi-bell bell-icon"></i>
+          <div className="d-flex ms-auto mt-2 align-items-center">
+            <i className="bi bi-bell bell-icon gly-rotate-45"></i>
             <Link to="/PatientLogin" className="log-A button-A fw-bold">
               Qkycu
             </Link>
             <Link to="/Profile" className="pro-icon-div cursor-pointer">
-              <i className="bi bi-person-circle"></i>
+              <i className="bi bi-person-circle "></i>
             </Link>
           </div>
         </Navbar.Collapse>
