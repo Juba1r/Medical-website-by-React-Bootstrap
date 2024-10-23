@@ -5,9 +5,12 @@
   border-radius: 10px;
   font-weight: 600;
   margin: 0 10px;
-  width: 150px;
+
+  width: 100px;
   padding: 10px 0;
-  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  box-shadow: inset 0px 5px 5px 2px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 10px 0 rgba(255, 255, 255, 0);
+
   transition: 0.4s;
   color: #000;
   display: flex;
@@ -18,19 +21,17 @@
   color: white;
   background-color: #877bae;
   text-decoration: none;
+  width: 120px;
 }
 
 .log {
   color: #000;
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid #877bae;
   text-decoration: none;
 }
 
 .button-U:hover {
-  color: white;
-  box-shadow: 0 0 20px #877bae;
-  background-color: #877bae;
+  color: #000;
+  background-color: #877bae37;
 }
 
 /* Navbar Styles */

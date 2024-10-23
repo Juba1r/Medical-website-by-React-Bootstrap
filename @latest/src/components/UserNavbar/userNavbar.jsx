@@ -62,7 +62,10 @@ const userNavbar = () => {
           {/* Login and Profile Icon */}
           <div className="d-flex ms-auto mt-2 align-items-center">
             <i className="bi bi-bell bell-icon gly-rotate-45"></i>
-            <Link to="/PatientLogin" className="log-A button-A fw-bold">
+            <Link
+              to="/PatientLogin"
+              className="text-decoration-none button-usernavbar fw-bold"
+            >
               Qkycu
             </Link>
             <Link to="/Profile" className="pro-icon-div cursor-pointer">

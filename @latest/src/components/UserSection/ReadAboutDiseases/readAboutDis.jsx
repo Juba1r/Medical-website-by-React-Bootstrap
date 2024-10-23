@@ -108,11 +108,10 @@ const ReadAboutDis = () => {
                 <Card.Body className="text-center">
                   <Card.Title className="fw-bold">{disease.title}</Card.Title>
                   <Card.Text>{disease.description}</Card.Text>
-                  <div  className="d-flex justify-content-center">
-
+                  <div className="d-flex justify-content-center">
                     <Link
                       to="/ReadMoreDiseases"
-                      className="button-U fw-bold rounded-pill px-4 text-decoration-none "
+                      className="button-disease-readmore fw-bold rounded-pill px-4 text-decoration-none "
                     >
                       Read more <i className="bi bi-arrow-right"></i>
                     </Link>

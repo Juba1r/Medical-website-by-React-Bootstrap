@@ -106,7 +106,7 @@ const DoctorTeam = () => {
                     <p className="doctor-title text-muted">{doctor.title}</p>
                     <Link
                       to="/doctorsProfile"
-                      className="button-D fw-bold mt-2"
+                      className="button-D fw-bold mt-2 text-decoration-none"
                     >
                       Read more & Rate <i className="bi bi-arrow-right"></i>
                     </Link>

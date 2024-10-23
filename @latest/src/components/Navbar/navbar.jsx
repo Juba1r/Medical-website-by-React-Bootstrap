@@ -40,7 +40,7 @@ const CustomNavbar = () => {
               Location
             </NavLink>
           </Nav>
-          <div className="d-flex gap-2">
+          <div className="d-flex">
             <Link to="/PatientLogin" className="log button-U fw-bold">
               Login
             </Link>

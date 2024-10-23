@@ -32,7 +32,7 @@ const aboutUs = () => {
         </div>
         <div className="mt-5">
           <p className="fs-3">Biography</p>
-          <p className="mt-3 fs-3 fw-normal">About Us</p>
+          <p className="mt-3 fs-3 fw-medium">About Us</p>
           <br />
           <div className="fs-5">
             <p>

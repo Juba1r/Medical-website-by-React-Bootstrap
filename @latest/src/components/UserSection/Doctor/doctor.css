@@ -47,20 +47,20 @@
   cursor: pointer;
   border: 0;
   border-radius: 10px;
-  margin: auto;
-  width: 160px;
-  padding: 5px 5px;
-  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  font-weight: 600;
+  width: 170px;
+  padding: 10px 0;
+  box-shadow: inset 0px 5px 5px 2px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 10px 0 rgba(255, 255, 255, 0);
   transition: 0.4s;
-  white-space: nowrap;
-  background-color: #5f93c16f;
-  text-decoration: none;
   color: #000;
+  display: flex;
+  justify-content: center;
 }
 
 .button-D:hover {
-  color: white;
-  /* width: 100px; */
-  box-shadow: 0 0 20px #877bae;
-  background-color: #877bae;
+  color: #000;
+  background-color: #4fabe06f;
+  box-shadow: inset 0px 5px 5px 2px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 10px 0 rgba(255, 255, 255, 0), 0 0 20px #877bae;
 }

@@ -54,7 +54,7 @@ const DiseaseCards = () => {
                   <div className="d-flex justify-content-center">
                     <Link
                       to="/ReadMoreDiseases"
-                      className="button-U text-decoration-none fw-bold rounded-pill"
+                      className="button-dis-readmore text-decoration-none fw-bold rounded-pill"
                     >
                       Read more <i className="bi bi-arrow-right"></i>
                     </Link>

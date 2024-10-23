@@ -17,15 +17,39 @@
   letter-spacing: 4px;
 }
 
-/* Title Button Styling */
+/* Title Button Styl
+ing */
 .title-btn {
   position: absolute;
   font-weight: 700;
   top: 55%;
   left: 70%;
   transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  font-size: 1.5vw;
+  width: 150px;
+  font-size: 1.2vw;
+}
+
+/* About Us button styling */
+
+.button-aboutus {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 150px;
+  padding: 10px 0;
+  box-shadow: inset 0px 5px 5px 2px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 10px 0 rgba(255, 255, 255, 0);
+  transition: 0.4s;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.button-aboutus:hover {
+  color: #000;
+  background-color: #877bae37;
 }
 
 /* Media Queries for responsiveness */
