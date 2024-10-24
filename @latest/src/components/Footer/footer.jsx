@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,29 +19,32 @@ const Footer = () => {
             <h5 className="fw-bold">Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-dark text-decoration-none">
+                <Link to="/Home" className="text-dark text-decoration-none">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-dark text-decoration-none">
+                <Link
+                  to="/Appointment"
+                  className="text-dark text-decoration-none"
+                >
                   Appointment
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-dark text-decoration-none">
+                <Link to="/" className="text-dark text-decoration-none">
                   Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-dark text-decoration-none">
+                <Link to="/AboutUs" className="text-dark text-decoration-none">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-dark text-decoration-none">
+                <Link to="/Home" className="text-dark text-decoration-none">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
