@@ -69,6 +69,8 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+  .navbar-collapse {
+  }
 }
 
 /* Small screens */
@@ -81,7 +83,12 @@
 }
 @media (max-width: 768px) {
   .navbar-collapse {
-    text-align: center;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   .nav-link {

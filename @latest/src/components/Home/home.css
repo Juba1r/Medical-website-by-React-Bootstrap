@@ -97,6 +97,9 @@ ing */
     top: 65%;
     left: 67%;
   }
+  .img-fluid {
+    width: 50%;
+  }
 }
 
 /* Home Button CSS */

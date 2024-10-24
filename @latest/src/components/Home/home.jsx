@@ -12,7 +12,7 @@ const home = () => {
     <>
       <div className="container-fluid p-0">
         <div className="image">
-          <img src={heroimg1} width="100%" alt="" />
+          <img src={heroimg1} width="100%" alt="Hero image1" />
           <h2 className="title fw-normal ">We take care of your health!</h2>
 
           <Link to="/Register" className="reg button-U title-btn">
